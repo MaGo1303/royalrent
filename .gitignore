@@ -1,0 +1,17 @@
+# Archivos del sistema
+*.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+*.suo
+*.user
+
+# Node
+node_modules/
+.env
+
+# Build output
+dist/
+frontend/dist/

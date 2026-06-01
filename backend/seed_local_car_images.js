@@ -118,6 +118,8 @@ async function seedLocalCarImages() {
         user: process.env.DB_USER || 'root',
         password: process.env.DB_PASSWORD || '',
         database: process.env.DB_NAME || 'royalrent',
+        port: process.env.DB_PORT || 3306,
+        ...(process.env.DB_HOST && process.env.DB_HOST !== 'localhost' && { ssl: { rejectUnauthorized: false } })
     });
 
     try {
